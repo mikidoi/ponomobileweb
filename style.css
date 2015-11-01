@@ -1,16 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Comic+Sans|Merriweather|Chalkboard');
 
 
-/***********GENERAL***********************/  
-  body{
-    font-family: 'Comic Sans','Merriweather', 'sans-serif';
+/***********GENERAL***********************/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
-  }
- 
- .page-wrapper{
+body {
+  font-family: 'Comic Sans','Merriweather', 'sans-serif';
+  margin: 0;  
 
- }
+}
 
+.page-wrapper{
+
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 /***HEM*******************************/
@@ -29,9 +46,19 @@
 
 /**************************************/
 /***VAD VI HAR GJORT*********************/
-
-
-
+.portfolio {
+  background: #DB760A;
+}
+.portfolio-container {
+  margin: 0 2em;
+}
+.portfolio-item {
+  float: left;
+  margin: 10px;
+}
+.portfolio-item img {
+  max-width: 100%;
+}
 
 
 /**************************************/
