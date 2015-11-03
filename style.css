@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Comic+Sans|Merriweather|Chalkboard');
 
 
-/***********GENERAL***********************/
+/*---------GENERAL------------
+Main colors:
+#F9F973 ; lemon yellow
+#247D7A ; dark green
+#2B5478 ; even darker green
+#DB760A ; orange
+
+*/
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -23,6 +31,10 @@ body {
 
 }
 
+h1, h2, h3{
+  color: #2B5478 ;
+}
+
 .group:after {
   content: "";
   display: table;
@@ -34,12 +46,122 @@ body {
   margin: 0 auto;
 }
 
+.title {
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/***HEM*******************************/
+
+
+
+
+
+/*-----------------NAV-----------------*/
+
+
+
+
+/***VAD VI HAR GJORT*********************/
+.portfolio {
+  background: #DC9447;
+}
+.portfolio-item img {
+  max-width: 100%;
+}
+
+
+/***VAD ERBUJDER VI*********************/
+
+#services h1{
+  padding-bottom: 10%;
+}
+
+#services h1, h3 {
+  text-align: center;
+}
+
+#services div img {
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  color: #DB760A;
+}
+
+#services{
+  max-width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 40%;
+}
+
+
+
+/***KONTAKTA OSSS*********************/
+
+
+
+
+
+/*********FOOTER****************************/
+footer{
+  clear: both;
+}
+
+
+
+
+
+
+/***NAV***********************************/
+
+
+
+
+
+
+
+
+
+
+/*------- Screen size ----------------*/
+@media all and (max-width: 1200px) {  
+  
+ 
+}
+
+@media all and (max-width: 800px) {  
+  .page-wrapper{
+    max-width: 95%;
+  }
+  
+  #services{
+  max-width: 95%;
+  margin: auto;
+}
+  
+  .col-4{
+    width: calc(100% / 12 * 12);
+  }
+  
+  #services{
+  padding-top: 0%;
+  padding-bottom: 0%;
+  }
+    
+  #services h1{
+    padding-bottom: 2%;
+  }
+  
+}
+    
 @media (min-device-width:481px) {
     [class^="col-"] {
       float: left;
       padding: 0 1rem;
     }
-
+    
     .col-1 {
       width: calc(100% / 12);
     }
@@ -59,70 +181,4 @@ body {
     .col-5 {
       width: calc(100% / 12 * 5);
     }
-}
-
-.title {
-    padding: 2rem;
-    font-size: 3rem;
-    text-align: center;
-}
-
-/***HEM*******************************/
-
-
-
-
-
-/**************************************/
-/***VAD ERBUJDER VI*********************/
-
-
-
-
-
-
-/**************************************/
-/***VAD VI HAR GJORT*********************/
-.portfolio {
-  background: #DC9447;
-}
-.portfolio-item img {
-  max-width: 100%;
-}
-
-/**************************************/
-/***VAD ERBUJDER VI*********************/
-
-
-
-
-
-/**************************************/
-/***KONTAKTA OSSS*********************/
-
-
-
-
-
-/**************************************/
-/*********FOOTER****************************/
-
-
-
-
-
-
-/*****************************************/
-/***NAV***********************************/
-
-
-
-
-
-
-
-
-
-/**************************************/
-
-}
+}    
