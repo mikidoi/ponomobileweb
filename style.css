@@ -25,6 +25,7 @@ body {
   font-family: 'Comic Sans','Merriweather', 'sans-serif';
   margin: 0;  
   font-size: 16px;    
+  background: #fff;
 }
 
 .page-wrapper{
@@ -59,11 +60,93 @@ h1, h2, h3{
 
 
 /*-----------------NAV-----------------*/
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+}
 
+#logo img{
+    max-height: 80px;
+}
 
+.menu{
+  left:-5rem;
+}
 
+label img{
+  max-height: 3rem;
+  padding-top: 1%;
+  color: #fff;
+}
+label {
+  height: 3.5rem;
+}
 
-/***VAD VI HAR GJORT*********************/
+ .toggle, [id^=drop] {
+ display: none;}
+ 
+ nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 0 20px;
+  color: #2B5478;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav ul li ul li:hover { background: #247D7A; }
+
+nav a:hover { background-color: #247D7A; color: #FFF; }
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul li:hover > ul { display: inherit; }
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+li > a:after { content: ' +'; }
+
+li > a:only-child:after { content: ''; }
+
+/***VAD HAR VI GJORT*********************/
 .portfolio {
   background: #DC9447;
 }
@@ -71,8 +154,7 @@ h1, h2, h3{
   max-width: 100%;
 }
 
-
-/***VAD ERBUJDER VI*********************/
+/***VAD ERBJUDER VI*********************/
 
 #services h1{
   padding-bottom: 10%;
@@ -85,8 +167,7 @@ h1, h2, h3{
 #services div img {
   display: block;
   margin: auto;
-  max-width: 100px;
-  color: #DB760A;
+  padding-top: 5%;
 }
 
 #services{
@@ -95,8 +176,6 @@ h1, h2, h3{
   padding-top: 5%;
   padding-bottom: 40%;
 }
-
-
 
 /***KONTAKTA OSSS*********************/
 
@@ -113,47 +192,90 @@ footer{
 
 
 
-
-/***NAV***********************************/
-
-
-
-
-
-
-
-
-
-
 /*------- Screen size ----------------*/
 @media all and (max-width: 1200px) {  
   
  
 }
 
-@media all and (max-width: 800px) {  
+@media all and (max-width: 768px) {  
   .page-wrapper{
     max-width: 95%;
   }
-  
-  #services{
+/*-----Vad erbjuder vi----*/  
+ #services{
   max-width: 95%;
   margin: auto;
 }
+
+.menu{
+  left:0rem;
+}
   
   .col-4{
-    width: calc(100% / 12 * 12);
+    width: 100%;
   }
   
   #services{
-  padding-top: 0%;
-  padding-bottom: 0%;
+  padding-top: 0;
+  padding-bottom: 0;
   }
     
   #services h1{
     padding-bottom: 2%;
   }
-  
+  /*------NAV-------*/
+#logo {
+  display: block;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+
+nav { margin: 0; }
+
+nav label{
+  text-align: right;
+}
+
+nav ul {
+  /*text-align: left;*/
+  background-color: #222;
+}
+
+.toggle + a,
+ .menu { display: none; }
+
+.toggle {
+  display: block;
+  background-color: #247D7A;
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  border: none;
+  transition: ease-in .2s;
+  -webkit-transition: ease-in .2s;
+  -o-transition: ease-in .2s;
+  -moz-transition: ease-in .2s;
+}
+
+.toggle:hover { background-color: #DB760A; }
+
+[id^=drop]:checked + ul { display: block; }
+
+nav ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul .toggle,
+ nav ul ul a { padding: 0 40px;}
+
+nav a:hover,
+ nav ul ul ul a { background-color: #DB760A; }
 }
     
 @media (min-device-width:481px) {
