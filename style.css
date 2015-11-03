@@ -24,7 +24,7 @@ html {
 body {
   font-family: 'Comic Sans','Merriweather', 'sans-serif';
   margin: 0;  
-  font-size: 16px;    
+  font-size: 16px;
   background: #fff;
 }
 
@@ -147,6 +147,9 @@ li > a:after { content: ' +'; }
 li > a:only-child:after { content: ''; }
 
 /***VAD HAR VI GJORT*********************/
+#portfolio{
+  clear: both;
+}
 .portfolio {
   background: #DC9447;
 }
@@ -155,11 +158,6 @@ li > a:only-child:after { content: ''; }
 }
 
 /***VAD ERBJUDER VI*********************/
-
-#services h1{
-  padding-bottom: 10%;
-}
-
 #services h1, h3 {
   text-align: center;
 }
@@ -176,6 +174,10 @@ li > a:only-child:after { content: ''; }
   padding-top: 5%;
   padding-bottom: 40%;
 }
+
+.col-41 {
+      width: calc(100% / 12 * 4);
+    }
 
 /***KONTAKTA OSSS*********************/
 
@@ -194,16 +196,15 @@ footer{
 
 /*------- Screen size ----------------*/
 @media all and (max-width: 1200px) {  
-  
- 
+  #services{
+  max-width: 95%;
+  }
 }
 
 @media all and (max-width: 768px) {  
-  .page-wrapper{
-    max-width: 95%;
-  }
-/*-----Vad erbjuder vi----*/  
- #services{
+  
+/*-----Vad erbjuder vi----*/    
+  #services{
   max-width: 95%;
   margin: auto;
 }
@@ -212,7 +213,7 @@ footer{
   left:0rem;
 }
   
-  .col-4{
+  .col-41{
     width: 100%;
   }
   
@@ -224,7 +225,8 @@ footer{
   #services h1{
     padding-bottom: 2%;
   }
-  /*------NAV-------*/
+    
+/*------NAV-------*/
 #logo {
   display: block;
   padding: 0;
@@ -240,8 +242,8 @@ nav label{
 }
 
 nav ul {
-  /*text-align: left;*/
-  background-color: #222;
+  text-align: left;
+  background-color: #EBBD62;
 }
 
 .toggle + a,
