@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Comic+Sans|Merriweather|Chalkboard');
 
 
-/***********GENERAL***********************/
+/*---------GENERAL------------
+Main colors:
+#F9F973 ; lemon yellow
+#247D7A ; dark green
+#2B5478 ; even darker green
+#DB760A ; orange
+
+*/
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -16,11 +24,15 @@ html {
 body {
   font-family: 'Comic Sans','Merriweather', 'sans-serif';
   margin: 0;  
-
+  
 }
 
 .page-wrapper{
 
+}
+
+h1, h2, h3{
+  color: #2B5478 ;
 }
 
 .group:after {
@@ -36,7 +48,7 @@ body {
 
 [class^="col-"] {
   float: left;
-  padding: 0 4rem;
+  padding: 0 1rem;
 }
 
 .col-1 {
@@ -65,15 +77,11 @@ body {
 
 
 
-/**************************************/
-/***VAD ERBUJDER VI*********************/
+/*-----------------NAV-----------------*/
 
 
 
 
-
-
-/**************************************/
 /***VAD VI HAR GJORT*********************/
 .portfolio {
   background: #DB760A;
@@ -82,29 +90,49 @@ body {
   max-width: 100%;
 }
 
-/**************************************/
+
 /***VAD ERBUJDER VI*********************/
 
+#services h1{
+  padding-bottom: 10%;
+}
+
+#services h1, h3 {
+  text-align: center;
+}
+
+#services div img {
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  color: #DB760A;
+}
+
+#services{
+  max-width: 80%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 40%;
+}
 
 
 
-
-/**************************************/
 /***KONTAKTA OSSS*********************/
 
 
 
 
 
-/**************************************/
 /*********FOOTER****************************/
+footer{
+  clear: both;
+}
 
 
 
 
 
 
-/*****************************************/
 /***NAV***********************************/
 
 
@@ -115,6 +143,34 @@ body {
 
 
 
-/**************************************/
 
+/*------- Screen size ----------------*/
+@media all and (max-width: 1200px) {  
+  
+ 
+}
+
+@media all and (max-width: 800px) {  
+  .page-wrapper{
+    max-width: 95%;
+  }
+  
+  #services{
+  max-width: 95%;
+  margin: auto;
+}
+  
+  .col-4{
+    width: calc(100% / 12 * 12);
+  }
+  
+  #services{
+  padding-top: 0%;
+  padding-bottom: 0%;
+  }
+    
+  #services h1{
+    padding-bottom: 2%;
+  }
+  
 }
