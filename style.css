@@ -178,6 +178,25 @@ li > a:only-child:after { content: ''; }
 .col-41 {
       width: calc(100% / 12 * 4);
     }
+    
+#upp{
+  clear: both;
+  background-color: red;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+#upp img{
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 1.5rem;
+  width: 1.5rem;
+  top:.4rem;
+}
 
 /***KONTAKTA OSSS*********************/
 
