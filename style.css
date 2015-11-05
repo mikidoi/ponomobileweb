@@ -44,7 +44,7 @@ h1, h2, h3{
 
 .row {
   width: 95%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .title {
@@ -147,14 +147,31 @@ li > a:after { content: ' +'; }
 li > a:only-child:after { content: ''; }
 
 /***VAD HAR VI GJORT*********************/
-#portfolio{
-  clear: both;
+.portfolio-item {
+  border: 4px solid #DC9447;
+  background: url('images/dammy.jpg') no-repeat center 1%;
+  background-color: transparent;
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  -webkit-transition: background .2s; 
+  transition: background .2s;
 }
-.portfolio {
+
+.portfolio-item p {
+  display: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.portfolio-item:hover {
   background: #DC9447;
 }
-.portfolio-item img {
-  max-width: 100%;
+
+.portfolio-item:hover p {
+  display: block;
 }
 
 /***VAD ERBJUDER VI*********************/
