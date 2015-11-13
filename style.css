@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Comic+Sans|Merriweather|Chalkboard');
+@import url('https://fonts.googleapis.com/css?family=Lora|Merriweather|Chalkboard');
 
 
 /*---------GENERAL------------
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Comic Sans','Merriweather', 'sans-serif';
+  font-family: 'Lora','Merriweather', 'sans-serif';
   margin: 0;  
   font-size: 16px;
   background: #fff;
@@ -54,26 +54,61 @@ h1, h2, h3{
 }
 
 /***HEM*******************************/
-
-
-
-
-
-/*-----------------NAV-----------------*/
-#logo {
-  display: block;
-  padding: 0 30px;
-  float: left;
-  font-size: 20px;
-  line-height: 60px;
+#logo{
+  padding-top:-1%;
 }
 
-#logo img{
+#logo img{ 
     max-height: 80px;
 }
+ 
+#logo span ::first-letter{
+   font-size:5rem;
+   color: rebeccapurple;
+ }
 
+#homeContent{
+  max-width: 85%;
+  margin: auto;
+}
+p::first-letter {
+    font-size: 120%;
+    color: #2B5478;
+}
+
+.bitcoin{
+  position: relative;
+  height: 2.5rem;
+  top:0.5rem;
+  color: #2B5478;
+}
+#benefit{
+  position: relative;
+  padding-top: -1.3rem;
+  
+}
+#home{
+  margin: auto; 
+}
+
+#home .col-5{
+  float: left;
+}
+
+#home .title{
+  padding: 0;
+}
+
+ .col-61 {
+      width: calc(100% / 12 * 6);
+    }
+/*-----------------NAV-----------------*/
+nav{
+  float: right;
+  margin-top: -9rem;
+}
 .menu{
-  left:-5rem;
+  left:-8rem;
 }
 
 label img{
@@ -82,7 +117,7 @@ label img{
   color: #fff;
 }
 label {
-  height: 3.5rem;
+  height: 3rem;
 }
 
  .toggle, [id^=drop] {
@@ -109,10 +144,10 @@ nav ul li {
 
 nav a {
   display: block;
-  padding: 0 20px;
+  padding: 0 1rem;
   color: #2B5478;
-  font-size: 20px;
-  line-height: 60px;
+  font-size: 1rem;
+  line-height: 4rem;
   text-decoration: none;
   font-weight: 700;
 }
@@ -142,10 +177,63 @@ nav ul ul ul li {
   left: 170px;
 }
 
-li > a:after { content: ' +'; }
+/*li > a:after { content: ' +'; }
 
-li > a:only-child:after { content: ''; }
+li > a:only-child:after { content: ''; }*/
 
+
+/*-----Search Box------*/
+input {
+  position: relative;
+	outline: none;
+  float: right;
+  right:3rem;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+  box-sizing: content-box;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+input[type=search] {
+	background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1.5px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+  
+  opacity: .8;
+}
+
+input[type=search]:focus {
+	width: 230px;
+	background-color: #fff;
+	border-color: #2B5478;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
 /***VAD HAR VI GJORT*********************/
 .portfolio-item {
   border: 4px solid #DC9447;
@@ -174,6 +262,9 @@ li > a:only-child:after { content: ''; }
   display: block;
 }
 
+#portfolio{
+  clear: both;
+}
 /***VAD ERBJUDER VI*********************/
 #services h1, h3 {
   text-align: center;
@@ -182,14 +273,14 @@ li > a:only-child:after { content: ''; }
 #services div img {
   display: block;
   margin: auto;
-  padding-top: 5%;
 }
 
 #services{
+  clear: both;
   max-width: 80%;
   margin: auto;
   padding-top: 5%;
-  padding-bottom: 40%;
+  padding-bottom: 10%;
 }
 
 .col-41 {
@@ -205,6 +296,7 @@ li > a:only-child:after { content: ''; }
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  opacity: .8;
 }
 #upp img{
   position: relative;
@@ -232,27 +324,45 @@ footer{
 
 /*------- Screen size ----------------*/
 @media all and (max-width: 1200px) {  
-  #services{
+  #services, #home{
   max-width: 95%;
   }
-}
+  
+  .menu{
+    left: -1rem;
+    font-size: 0rem;
+    }
+  
+    nav a {
+    padding: 0 10px;
+    }
+    
+    input{
+      margin-top: 10px;
+    }
+    
+    input[type=search]:focus {
+    width: 140px;
+    }
+  }
+
+  .title{
+    font-size: 1.7rem;
+  }
 
 @media all and (max-width: 768px) {  
-  
-/*-----Vad erbjuder vi----*/    
-  #services{
+/*-----Home----*/
+ #logo, #home {
   max-width: 95%;
-  margin: auto;
 }
-
-.menu{
-  left:0rem;
-}
-  
-  .col-41{
+ input{
+   right: 1rem;
+ }
+/*-----Vad erbjuder vi----*/    
+  .col-41, .col-61{
     width: 100%;
   }
-  
+
   #services{
   padding-top: 0;
   padding-bottom: 0;
@@ -263,15 +373,11 @@ footer{
   }
     
 /*------NAV-------*/
-#logo {
-  display: block;
-  padding: 0;
-  width: 100%;
-  text-align: center;
-  float: none;
-}
 
-nav { margin: 0; }
+nav { 
+  margin: 0; 
+  margin-top: -7.5rem;
+}
 
 nav label{
   text-align: right;
@@ -279,13 +385,15 @@ nav label{
 
 nav ul {
   text-align: left;
-  background-color: #D6F8D6;
+  background-color: #161925;
 }
 
 .toggle + a,
  .menu { display: none; }
 
 .toggle {
+  position: relative;
+  left: -1rem;
   display: block;
   background-color: #247D7A;
   padding: 0 20px;
@@ -341,4 +449,5 @@ nav a:hover,
     .col-5 {
       width: calc(100% / 12 * 5);
     }
+       
 }    
