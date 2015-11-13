@@ -216,10 +216,16 @@ li > a:only-child:after { content: ''; }
 }
 
 /***KONTAKTA OSSS*********************/
-
-
-
-
+#contact div {
+    margin-left: 3.5%;
+    display: inline-block; }
+.contact-info {
+    position: relative;
+    bottom:8.5em;
+    margin-left: 2%; }
+    
+ .contact-map>iframe{
+    width: 100%; }  
 
 /*********FOOTER****************************/
 footer{
@@ -314,6 +320,14 @@ nav ul ul .toggle,
 
 nav a:hover,
  nav ul ul ul a { background-color: #DB760A; }
+ 
+/*Contact Oss */
+
+.contact-info {    
+    bottom: 0;     
+    text-align: center; }
+.contact-map {    
+    text-align: center; }
 }
     
 @media (min-device-width:481px) {
@@ -340,5 +354,6 @@ nav a:hover,
 
     .col-5 {
       width: calc(100% / 12 * 5);
-    }
+    }    
+
 }    
