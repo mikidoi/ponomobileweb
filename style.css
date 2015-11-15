@@ -354,6 +354,138 @@ nav a:hover,
 
     .col-5 {
       width: calc(100% / 12 * 5);
-    }    
+    } 
+    
+    
+    /* Kontakta oss*/
+    h1{
+  color: #B30047;
+  margin-left:90px;
+  margin-top:10px;
+  
+}
+.kontaktbox{
+  width:200px;
+  height:150px;
+  padding:5px;
+  border:1px solid black;
+  margin-left: 75px;
+  margin-top: auto;
+  background-color: #DB760A
+  
+}
+h2{
+
+  float: right;
+  margin-right: 110px;
+  margin-top:10px;
+  
+  }
+img{ 
+   border:1px solid black;
+   width:200px;
+   height:150px;
+   padding: 0px;
+   margin-top: auto; 
+   margin-right:-165px;
+   float:right;
+}
+.line-separator{
+  height: 1px;
+  background:black;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.floating-box1{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:220px;
+}
+.floating-box2{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:200px;
+}
+.floating-box3{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+   margin-left:200px;
+}
+
+.floating-name1{
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:220px;
+  background-color: #247D7A;
+}
+
+.floating-name2{
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:200px;
+  background-color: #247D7A;
+}
+.floating-name3{
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border: 3px solid black;
+  margin:10px;
+  margin-left:200px;
+  background-color: #247D7A;
+}
+.floating-box4{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 30px;
+    border: 3px solid #73AD21;
+   margin-left:410px;
+}
+.floating-box5{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 30px;
+    border: 3px solid #73AD21;
+   margin-left:180px;
+}
+.floating-name4{
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:410px;
+  background-color: #247D7A;
+}
+.floating-name5{
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:200px;
+  background-color: #247D7A;
+}
+
 
 }    
