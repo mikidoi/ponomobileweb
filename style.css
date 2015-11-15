@@ -358,6 +358,11 @@ nav a:hover,
     
     
     /* Kontakta oss*/
+    @media (min-device-width:481px) {
+       #kontakta oss{
+              float: left;
+              padding: 0 1rem;
+            }
     h1{
   color: #B30047;
   margin-left:90px;
