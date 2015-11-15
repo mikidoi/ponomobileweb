@@ -357,52 +357,23 @@ nav a:hover,
     } 
     
     
-    /* Kontakta oss*/
-    @media (min-device-width:481px) {
-       #kontakta oss{
-              float: left;
-              padding: 0 1rem;
-            }
-    h1{
-  color: #B30047;
-  margin-left:90px;
-  margin-top:10px;
-  
-}
-.kontaktbox{
-  width:250px;
-  height:150px;
-  padding:5px;
-  border:1px solid black;
-  margin-left: 75px;
-  margin-top: auto;
-  background-color: #DB760A
-  
-}
-h2{
-
-  float: right;
-  margin-right: 110px;
-  margin-top:10px;
-  
-  }
-img{ 
-   border:1px solid black;
-   width:200px;
-   height:150px;
-   padding: 0px;
-   margin-top: auto; 
-   margin-right:-165px;
-   float:right;
-}
+    /* Vilka är vi? */
+ 
 .line-separator{
   height: 1px;
   background:black;
-  width: 500px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
 
 }
+.vilka är vi-title{
+     color: #2B5478 ;
+    padding:2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
 
 .floating-box1{
     display: inline-block;
@@ -411,7 +382,9 @@ img{
     margin: 10px;
     border: 3px solid #73AD21;
     margin-left:220px;
+    
 }
+
 .floating-box2{
     display: inline-block;
     width: 150px;
@@ -431,30 +404,30 @@ img{
 
 .floating-name1{
   display: inline-block;
-  width: 150px;
+  width: 160px;
   height: 50px;
   border: 3px solid black;
   margin: 10px;
-  margin-left:220px;
+  margin-left:215px;
   background-color: #247D7A;
 }
 
 .floating-name2{
   display: inline-block;
-  width: 150px;
+  width: 160px;
   height: 50px;
   border: 3px solid black;
   margin: 10px;
-  margin-left:200px;
+  margin-left:190px;
   background-color: #247D7A;
 }
 .floating-name3{
   display: inline-block;
-  width: 150px;
+  width: 160px;
   height: 50px;
   border: 3px solid black;
   margin:10px;
-  margin-left:200px;
+  margin-left:190px;
   background-color: #247D7A;
 }
 .floating-box4{
@@ -475,20 +448,20 @@ img{
 }
 .floating-name4{
   display: inline-block;
-  width: 150px;
+  width: 160px;
   height: 50px;
   border: 3px solid black;
   margin: 10px;
-  margin-left:410px;
+  margin-left:405px;
   background-color: #247D7A;
 }
 .floating-name5{
   display: inline-block;
-  width: 150px;
+  width: 160px;
   height: 50px;
   border: 3px solid black;
   margin: 10px;
-  margin-left:200px;
+  margin-left:190px;
   background-color: #247D7A;
 }
 
