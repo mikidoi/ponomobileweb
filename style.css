@@ -358,7 +358,6 @@ nav a:hover,
     
     
     /* Vilka är vi? */
- 
 .line-separator{
   height: 1px;
   background:black;
@@ -367,15 +366,15 @@ nav a:hover,
   margin-right: auto;
 
 }
-.vilka är vi-title{
-     color: #2B5478 ;
-    padding:2rem;
+.title{
+    padding: 2rem;
     font-size: 3rem;
     text-align: center;
+    color: #2B5478 ;
 }
 
 
-.floating-box1{
+.floating-box{
     display: inline-block;
     width: 150px;
     height: 200px;
@@ -384,85 +383,49 @@ nav a:hover,
     margin-left:220px;
     
 }
+.after-box{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:220px;
+  background-color: #247D7A;
+}
+.floating-box1{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:420px;
+    }
 
+.after-box1{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:420px;
+  background-color: #247D7A;
+}
+.after-box2{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:220px;
+  background-color: #247D7A;
+}
 .floating-box2{
-    display: inline-block;
+  display: inline-block;
     width: 150px;
     height: 200px;
     margin: 10px;
     border: 3px solid #73AD21;
-    margin-left:200px;
-}
-.floating-box3{
-    display: inline-block;
-    width: 150px;
-    height: 200px;
-    margin: 10px;
-    border: 3px solid #73AD21;
-   margin-left:200px;
-}
-
-.floating-name1{
-  display: inline-block;
-  width: 160px;
-  height: 50px;
-  border: 3px solid black;
-  margin: 10px;
-  margin-left:215px;
-  background-color: #247D7A;
-}
-
-.floating-name2{
-  display: inline-block;
-  width: 160px;
-  height: 50px;
-  border: 3px solid black;
-  margin: 10px;
-  margin-left:190px;
-  background-color: #247D7A;
-}
-.floating-name3{
-  display: inline-block;
-  width: 160px;
-  height: 50px;
-  border: 3px solid black;
-  margin:10px;
-  margin-left:190px;
-  background-color: #247D7A;
-}
-.floating-box4{
-    display: inline-block;
-    width: 150px;
-    height: 200px;
-    margin: 30px;
-    border: 3px solid #73AD21;
-   margin-left:410px;
-}
-.floating-box5{
-    display: inline-block;
-    width: 150px;
-    height: 200px;
-    margin: 30px;
-    border: 3px solid #73AD21;
-   margin-left:180px;
-}
-.floating-name4{
-  display: inline-block;
-  width: 160px;
-  height: 50px;
-  border: 3px solid black;
-  margin: 10px;
-  margin-left:405px;
-  background-color: #247D7A;
-}
-.floating-name5{
-  display: inline-block;
-  width: 160px;
-  height: 50px;
-  border: 3px solid black;
-  margin: 10px;
-  margin-left:190px;
-  background-color: #247D7A;
+    margin-left:220px;
 }
 
 
