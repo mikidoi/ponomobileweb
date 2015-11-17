@@ -54,11 +54,20 @@ h1, h2, h3{
 }
 
 /***HEM*******************************/
+#home {
+  background: #c77965;
+}
 
+#home .title {
+  color: white;
+  padding-bottom: 0;    
+}
 
-
-
-
+#home img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;    
+}
 /*-----------------NAV-----------------*/
 #logo {
   display: block;
@@ -147,6 +156,14 @@ li > a:after { content: ' +'; }
 li > a:only-child:after { content: ''; }
 
 /***VAD HAR VI GJORT*********************/
+
+#portfolio {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
 .portfolio-item {
   border: 4px solid #DC9447;
   background: url('images/dammy.jpg') no-repeat center 1%;
@@ -185,7 +202,7 @@ li > a:only-child:after { content: ''; }
   padding-top: 5%;
 }
 
-#services{
+#services {
   max-width: 80%;
   margin: auto;
   padding-top: 5%;
@@ -238,7 +255,8 @@ footer{
 
 /*------- Screen size ----------------*/
 @media all and (max-width: 1200px) {  
-  #services{
+  #services,
+  #portfolio {
   max-width: 95%;
   }
 }
@@ -246,7 +264,8 @@ footer{
 @media all and (max-width: 768px) {  
   
 /*-----Vad erbjuder vi----*/    
-  #services{
+  #services,
+  #portfolio {
   max-width: 95%;
   margin: auto;
 }
@@ -320,6 +339,11 @@ nav ul ul .toggle,
 
 nav a:hover,
  nav ul ul ul a { background-color: #DB760A; }
+    
+/***VAD HAR VI GJORT*********************/
+.portfolio-item p {
+    font-size: 1.5rem;
+}    
  
 /*Contact Oss */
 
@@ -330,31 +354,15 @@ nav a:hover,
     text-align: center; }
 }
     
-@media (min-device-width:481px) {
+@media (min-width:481px) {
     [class^="col-"] {
       float: left;
       padding: 0 1rem;
-    }
-    
-    .col-1 {
-      width: calc(100% / 12);
-    }
-
-    .col-2 {
-      width: calc(100% / 12 * 2);
-    }
-
-    .col-3 {
-      width: calc(100% / 12 * 3);
     }
 
     .col-4 {
       width: calc(100% / 12 * 4);
     }
-
-    .col-5 {
-      width: calc(100% / 12 * 5);
-    } 
     
     
     /* Vilka är vi? */
@@ -465,5 +473,5 @@ nav a:hover,
   background-color: #247D7A;
 }
 
+} 
 
-}    
