@@ -87,17 +87,26 @@ p::first-letter {
   padding-top: -1.3rem;
   
 }
+
 #home{
   margin: auto; 
+  background: #c77965;
 }
+
 
 #home .col-5{
   float: left;
 }
-
-#home .title{
-  padding: 0;
+#home img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;    
 }
+
+#home .title {
+  color: white;
+  padding: 0;  
+}  
 
  .col-61 {
       width: calc(100% / 12 * 6);
@@ -235,6 +244,14 @@ input::-webkit-input-placeholder {
 	color: #999;
 }
 /***VAD HAR VI GJORT*********************/
+
+#portfolio {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
 .portfolio-item {
   border: 4px solid #DC9447;
   background: url('images/dammy.jpg') no-repeat center 1%;
@@ -270,17 +287,23 @@ input::-webkit-input-placeholder {
   text-align: center;
 }
 
+#services h1 .title{
+  text-align: center;
+  color: #247D7A;
+}
 #services div img {
   display: block;
   margin: auto;
 }
 
-#services{
+section + #services{
   clear: both;
-  max-width: 80%;
+  clear:inherit;
+  /*max-width: 80%;*/
   margin: auto;
   padding-top: 5%;
   padding-bottom: 10%;
+  background: #fff;
 }
 
 .col-41 {
@@ -308,10 +331,16 @@ input::-webkit-input-placeholder {
 }
 
 /***KONTAKTA OSSS*********************/
-
-
-
-
+#contact div {
+    margin-left: 3.5%;
+    display: inline-block; }
+.contact-info {
+    position: relative;
+    bottom:8.5em;
+    margin-left: 2%; }
+    
+ .contact-map>iframe{
+    width: 100%; }  
 
 /*********FOOTER****************************/
 footer{
@@ -324,8 +353,8 @@ footer{
 
 /*------- Screen size ----------------*/
 @media all and (max-width: 1200px) {  
-  #services, #home{
-  max-width: 95%;
+ #portfolio {
+    max-width: 95%;
   }
   
   .menu{
@@ -352,7 +381,7 @@ footer{
 
 @media all and (max-width: 768px) {  
 /*-----Home----*/
- #logo, #home {
+ #logo,  #portfolio {
   max-width: 95%;
 }
  input{
@@ -422,32 +451,101 @@ nav ul ul .toggle,
 
 nav a:hover,
  nav ul ul ul a { background-color: #DB760A; }
+    
+/***VAD HAR VI GJORT*********************/
+.portfolio-item p {
+    font-size: 1.5rem;
+}    
+ 
+/*Contact Oss */
+
+.contact-info {    
+    bottom: 0;     
+    text-align: center; }
+.contact-map {    
+    text-align: center; }
 }
     
-@media (min-device-width:481px) {
+@media (min-width:481px) {
     [class^="col-"] {
       float: left;
       padding: 0 1rem;
-    }
-    
-    .col-1 {
-      width: calc(100% / 12);
-    }
-
-    .col-2 {
-      width: calc(100% / 12 * 2);
-    }
-
-    .col-3 {
-      width: calc(100% / 12 * 3);
     }
 
     .col-4 {
       width: calc(100% / 12 * 4);
     }
+    
+    
+    /* Vilka är vi? */
+.line-separator{
+  height: 1px;
+  background:black;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 
-    .col-5 {
-      width: calc(100% / 12 * 5);
-    }
-       
-}    
+}
+.title{
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #2B5478 ;
+}
+
+
+.floating-box{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:220px;
+    
+}
+.after-box{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:220px;
+  background-color: #247D7A;
+}
+.floating-box1{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:420px;
+  }      
+   
+.after-box1{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:420px;
+  background-color: #247D7A;
+}
+.after-box2{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  margin: 10px;
+  margin-left:220px;
+  background-color: #247D7A;
+}
+.floating-box2{
+  display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    margin-left:220px;
+}
+
+} 
