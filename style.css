@@ -51,7 +51,7 @@ h1, h2, h3{
    color:#fff;
 }
 .title {
-    padding: 2rem;
+    padding: 1rem;
     font-size: 3rem;
     text-align: center;
 }
@@ -90,6 +90,7 @@ p::first-letter {
   margin: auto; 
   background: #c77965;
   padding-top: 1rem;;
+  padding-bottom: 1rem;
 }
 
 
@@ -298,7 +299,6 @@ input::-webkit-input-placeholder {
 section + #services{
   clear: both;
   clear:inherit;
-  /*max-width: 80%;*/
   margin: auto;
   padding-top: 5%;
   padding-bottom: 5%;
