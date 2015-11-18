@@ -53,6 +53,10 @@ h1, h2, h3{
     text-align: center;
 }
 
+.wrapper{
+  max-width: 80%;
+  margin: auto;
+}
 /***HEM*******************************/
 #logo{
   padding-top:-1%;
@@ -74,6 +78,7 @@ h1, h2, h3{
 p::first-letter {
     font-size: 120%;
     color: #2B5478;
+    font-weight: 700;
 }
 
 .bitcoin{
@@ -91,13 +96,14 @@ p::first-letter {
 #home{
   margin: auto; 
   background: #c77965;
+  padding-top: 1rem;;
 }
 
 
 #home .col-5{
   float: left;
 }
-#home img {
+.mainPic img {
   display: block;
   margin: 0 auto;
   max-width: 100%;    
@@ -163,7 +169,7 @@ nav a {
 
 nav ul li ul li:hover { background: #247D7A; }
 
-nav a:hover { background-color: #247D7A; color: #FFF; }
+nav a:hover { background-color: #2B5478; color: #FFF; border-radius: 5px;}
 
 nav ul ul {
   display: none;
@@ -246,7 +252,6 @@ input::-webkit-input-placeholder {
 /***VAD HAR VI GJORT*********************/
 
 #portfolio {
-  max-width: 80%;
   margin: auto;
   padding-top: 15%;
   padding-bottom: 10%;
@@ -281,6 +286,7 @@ input::-webkit-input-placeholder {
 
 #portfolio{
   clear: both;
+  background: #c77965;
 }
 /***VAD ERBJUDER VI*********************/
 #services h1, h3 {
@@ -302,7 +308,7 @@ section + #services{
   /*max-width: 80%;*/
   margin: auto;
   padding-top: 5%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   background: #fff;
 }
 
@@ -353,10 +359,6 @@ footer{
 
 /*------- Screen size ----------------*/
 @media all and (max-width: 1200px) {  
- #portfolio {
-    max-width: 95%;
-  }
-  
   .menu{
     left: -1rem;
     font-size: 0rem;
@@ -381,7 +383,7 @@ footer{
 
 @media all and (max-width: 768px) {  
 /*-----Home----*/
- #logo,  #portfolio {
+ #logo {
   max-width: 95%;
 }
  input{
@@ -414,7 +416,7 @@ nav label{
 
 nav ul {
   text-align: left;
-  background-color: #161925;
+  background-color: #E3CDA4;
 }
 
 .toggle + a,
@@ -424,7 +426,8 @@ nav ul {
   position: relative;
   left: -1rem;
   display: block;
-  background-color: #247D7A;
+  background-color: #2B5478;
+  border-radius: 5px;
   padding: 0 20px;
   color: #FFF;
   font-size: 20px;
@@ -447,7 +450,7 @@ nav ul li {
 }
 
 nav ul ul .toggle,
- nav ul ul a { padding: 0 40px;}
+ nav ul ul a { padding: 0 20px;}
 
 nav a:hover,
  nav ul ul ul a { background-color: #DB760A; }
@@ -475,7 +478,9 @@ nav a:hover,
     .col-4 {
       width: calc(100% / 12 * 4);
     }
-    
+.wrapper{
+  max-width: 90%;
+}    
     
     /* Vilka är vi? */
 .line-separator{

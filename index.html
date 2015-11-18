@@ -13,7 +13,7 @@
 <body >
 	<div class="page-wrapper">
 		<section  id="home">
-			<section id = "homeContent" > 
+			<div class="wrapper" > 
 	    		<h1 id="logo">
 						<img src="images/logo.png" class="col-5"/>
 						<span class="title" id="pono">Pono
@@ -39,31 +39,26 @@
 				</form>
 			</nav>	
 			
-				<article> <h1 class="title"> Vadför väljer oss? </h1>
-                <img src="images/main.jpg">											
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
-				</article>				
-				<article class="col-61"> 						
-					<h1 > Paricipation </h1>					
+				<h1 class="title"> Vadför väljer oss? </h1>
+				<div class="mainPic"> <img src="images/main.jpg" ></div>											
 					
-						<p>Venison tri-tip jowl short ribs, jerky meatball prosciutto shank shoulder picanha rump. Andouille salami beef ribs brisket, shankle kielbasa turkey flank tenderloin t-bone filet mignon chicken. Ham hock bresaola leberkas, cupim filet mignon turkey brisket spare ribs. Meatloaf chuck leberkas chicken, cow sausage bresaola. 							
+						<p >Venison tri-tip jowl short ribs, jerky meatball prosciutto shank shoulder picanha rump. Andouille salami beef ribs brisket, shankle kielbasa turkey flank tenderloin t-bone filet mignon chicken. Ham hock bresaola leberkas, cupim filet mignon turkey brisket spare ribs. Meatloaf chuck leberkas chicken, cow sausage bresaola. 							
 						</p>
 						<p>Pig pork loin boudin, sirloin picanha tail short ribs beef shank ground round turkey pork belly jowl meatloaf. Biltong sausage landjaeger, short ribs filet mignon picanha swine capicola jerky. Salami ball tip pastrami pork ham bresaola, bacon capicola. 
 						</p>
-				</article>					
+				<!--					
 				<article class="col-61" id="benefit"> 
 					<h1 > <span><img class="bitcoin" src="images/bitcoin.png"/></span>enefit </h1>										
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
 						<p>Pork ball tip jerky sausage brisket alcatra turducken. Kielbasa pork chop hamburger pig beef ribs. Shankle boudin kevin, spare ribs jerky frankfurter alcatra. Tail fatback ribeye andouille meatloaf.								
 						</p>																
-				</article > 
+				</article > -->
+			<div>
 		</section> <!--end of 'Home' section-->
 		
-		<section  id="services"> <!-- Vad erbjuder vi-->
+		<section id="services"> <!-- Vad erbjuder vi-->
+			<div class="wrapper">
 				<h1 class="title"> Vad erbjuder vi? </h1>
 					<div id="design" class="col-41"> 
 						<div class ="design"> <img src="images/design.png" alt="design"></div>
@@ -93,47 +88,48 @@
 						</div>
 					</div>
 					<a href="#home" id="upp"><img src="images/upp.png" alt="up"> </a>
+			</div>
 		</section><!--end of 'services' section-->
 		
 		<section id="portfolio">  <!--Vad vi har gjort -->
-            <div class="row group">
-               <h1 class="title">Vad vi har gjort</h1>
-                <div class="col-4">
-                  <a class="portfolio-item">
-                    <p>portfolio 1</p>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="portfolio-item">
-                    <p>portfolio 1</p>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="portfolio-item">
-                    <p>portfolio 1</p>
-                  </a>
-                </div>
-            </div>
-            <div class="row group">
-                <div class="col-4">
-                  <a class="portfolio-item">
-                    <p>portfolio 1</p>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="portfolio-item">
-                    <p>portfolio 1</p>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a class="portfolio-item">
-                    <p>portfolio 1</p>
-                  </a>
-                </div>
-            </div>
-	          
-	        
-			</section> <!-- end of 'portfolio' section-->
+            <div class="wrapper">
+				<div class="row group">
+				<h1 class="title">Vad vi har gjort</h1>
+					<div class="col-4">
+					<a class="portfolio-item">
+						<p>portfolio 1</p>
+					</a>
+					</div>
+					<div class="col-4">
+					<a class="portfolio-item">
+						<p>portfolio 1</p>
+					</a>
+					</div>
+					<div class="col-4">
+					<a class="portfolio-item">
+						<p>portfolio 1</p>
+					</a>
+					</div>
+				</div>
+				<div class="row group">
+					<div class="col-4">
+					<a class="portfolio-item">
+						<p>portfolio 1</p>
+					</a>
+					</div>
+					<div class="col-4">
+					<a class="portfolio-item">
+						<p>portfolio 1</p>
+					</a>
+					</div>
+					<div class="col-4">
+					<a class="portfolio-item">
+						<p>portfolio 1</p>
+					</a>
+					</div>
+				</div>       	  
+	        </div>
+		</section> <!-- end of 'portfolio' section-->
 		<section id="contact">
             <div class="contact-info col-41">
                 <h1 class="contact-title">Kontakta Oss</h1>
