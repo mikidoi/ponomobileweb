@@ -169,7 +169,7 @@ nav a {
 
 nav ul li ul li:hover { background: #247D7A; }
 
-nav a:hover { background-color: #2B5478; color: #FFF; border-radius: 5px;}
+nav a:hover { background-color: #2B5478; color: #FFF; }
 
 nav ul ul {
   display: none;
@@ -347,10 +347,33 @@ section + #services{
     
  .contact-map>iframe{
     width: 100%; }  
-
-/*********FOOTER****************************/
+    
+/*----------FOOTER------------*/    
 footer{
   clear: both;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  background: #247D7A;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0 15px;
+  text-align: center;
+  border-right: #DC9447 3px solid;
+}
+
+footer a:last-child{
+  border: none;
+}
+
+footer a:hover{
+  color: #2B5478;
+  background: #fff;
+  padding:15px;
+  transition: .2s ease-in;
 }
 
 
@@ -468,7 +491,7 @@ nav a:hover,
 .contact-map {    
     text-align: center; }
 }
-    
+
 @media (min-width:481px) {
     [class^="col-"] {
       float: left;
@@ -497,7 +520,6 @@ nav a:hover,
     text-align: center;
     color: #2B5478 ;
 }
-
 
 .floating-box{
     display: inline-block;
@@ -554,3 +576,9 @@ nav a:hover,
 }
 
 } 
+
+@media all and (max-width: 620px) {  
+  .hideMe{
+    display: none;
+  }
+}
