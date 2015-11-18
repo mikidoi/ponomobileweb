@@ -10,7 +10,7 @@ Main colors:
 
 */
 
-html {
+body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -46,7 +46,10 @@ h1, h2, h3{
   width: 95%;
   margin: 10px auto;
 }
-
+.title1{
+   font-size: 2rem;
+   color:#fff;
+}
 .title {
     padding: 2rem;
     font-size: 3rem;
@@ -58,18 +61,13 @@ h1, h2, h3{
   margin: auto;
 }
 /***HEM*******************************/
-#logo{
+/*#logo{
   padding-top:-1%;
-}
+}*/
 
 #logo img{ 
     max-height: 80px;
 }
- 
-#logo span ::first-letter{
-   font-size:5rem;
-   color: rebeccapurple;
- }
 
 #homeContent{
   max-width: 85%;
@@ -86,11 +84,6 @@ p::first-letter {
   height: 2.5rem;
   top:0.5rem;
   color: #2B5478;
-}
-#benefit{
-  position: relative;
-  padding-top: -1.3rem;
-  
 }
 
 #home{
@@ -110,7 +103,7 @@ p::first-letter {
 }
 
 #home .title {
-  color: white;
+  color: #fff;
   padding: 0;  
 }  
 
